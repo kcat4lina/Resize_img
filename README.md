@@ -7,6 +7,8 @@ This is a free to use tool for resizing images.
 It supports *.png 
 It supports *.jpg
 It supports *.bmp
+It supports *.jpeg
+It supports *.gif
 
 ## Getting Started
 

@@ -16,7 +16,7 @@ class ImageResizer(QWidget):
 
         layout = QVBoxLayout()
 
-        # File selection
+        # File selection - select your image
         file_layout = QHBoxLayout()
         self.file_path = QLineEdit(self)
         self.file_path.setStyleSheet("background-color: #3c3f41; border: 1px solid #646464;")
@@ -48,7 +48,7 @@ class ImageResizer(QWidget):
         self.setLayout(layout)
 
     def choose_file(self):
-        file_name, _ = QFileDialog.getOpenFileName(self, "Choose Image", "", "Image Files (*.png *.jpg *.bmp)")
+        file_name, _ = QFileDialog.getOpenFileName(self, "Choose Image", "", "Image Files (*.png *.jpg *.bmp *.jpeg *.gif)")
         if file_name:
             self.file_path.setText(file_name)
 
